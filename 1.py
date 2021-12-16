@@ -1,0 +1,1 @@
+print((lambda x: (max([a * (2020-a) for a in x if 2020-a in x]), max(max([[a*b*(2020-a-b) for a in x if 2020-a-b in x] for b in x]))))({int(i) for i in open("1").readlines()}))

@@ -1,0 +1,1 @@
+print((lambda k,v: (max([(v := (v * 7) % 20201227,(lambda v: pow(k[v==k[0]], i+1, 20201227) if v in k else 0)(v))[1] for i in range(20201227)]), "FREEBIE"))([int(n) for n in open("25").readlines()],1))

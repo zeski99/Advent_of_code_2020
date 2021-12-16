@@ -1,0 +1,1 @@
+print((lambda a: ((a.sort() != None) + max(a), max([a[i]+1 for i in range(len(a)-1) if a[i] + 1 != a[i+1]])))([8*int(a[:7], 2)+int(a[7:], 2) for a in open("5").read()[:-1].replace("F", "0").replace("B", "1").replace("R", "1").replace("L", "0").split()]))

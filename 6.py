@@ -1,0 +1,1 @@
+print((lambda q:(sum([len({a for a in h.replace("\n","")}) for h in q]),sum([len(set.intersection(*[set(a)for a in h.split("\n")]))for h in q])))(open("6").read()[:-1].split("\n\n")))

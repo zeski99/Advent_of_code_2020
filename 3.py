@@ -1,0 +1,1 @@
+print((lambda r: (r[1], (lambda g, m: g(g,m))(lambda y, x: x[0] if len(x) == 1 else x.pop(0) * y(y, x), r)))((lambda h: [(lambda f,*a: f(f,*a))(lambda f,h,p,i,j: 0 if i == len(h) else (p == p // 1 and h[i][int(p)] == "#") + f(f,h,(p+j) % len(h[0]),i+1, j),h,0,0,a) for a in [1,3,5,7,0.5]])(open("3").read()[:-1].split("\n"))))

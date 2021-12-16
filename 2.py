@@ -1,0 +1,1 @@
+print((lambda h: (len([1 for e in h if e[3].count(e[2]) >= e[0] and e[3].count(e[2]) <= e[1]]), len([1 for e in h if len(e[3]) > e[1]-1 and ((e[3][e[0]-1] == e[2]) ^ (e[3][e[1]-1] == e[2]))])))([(lambda x: (lambda y: [int(y[0]), int(y[1])])(x[0].split("-")) + [x[1][0], x[2]])(a.split()) for a in open("2").readlines()]))

@@ -1,0 +1,1 @@
+print((lambda f,*y: f(f,*y))(lambda f, a, i, g, h: (a[i], h(a, a[i])) if g(a[i-25:i], a[i]) else f(f, a, i+1, g, h), [int(n) for n in  open("9").readlines()], 26,lambda c,d: not any(i+j==d for i in c for j in c),lambda e,f: max(max([[max(e[i:j]) + min(e[i:j]) for i in range(j-1) if sum(e[i:j]) == f] for j in range(1, len(e))]))))
